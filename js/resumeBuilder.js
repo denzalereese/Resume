@@ -93,7 +93,7 @@ var projects = {
         "dates": "2016",
         "description": "An online resume built with JavaScript/jQuery",
         "images": ["images/resume-laptop.JPG", "images/resume-mobile.jpg"],
-        "link": "http://www.github.com/denzalereese/portfolio"
+        "link": "https://github.com/denzalereese/frontend-nanodegree-resume"
     }],
     "display": function() {
         for (var i = 0; i < projects.projects.length; i++) {
