@@ -1,5 +1,17 @@
+// Hello.
+//
+// This is JSHint, a tool that helps to detect errors and potential
+// problems in your JavaScript code.
+//
+// To start, simply enter some JavaScript anywhere on this page. Your
+// report will appear on the right side.
+//
+// Additionally, you can toggle specific options in the Configure
+// menu.
+
 var bio = {
-    "name": "Denzale Reese",
+    "name": 'Denzale "Wolf" Reese',
+    "role": "Front-End Student @ Udacity",
     "age": 23,
     "contacts": {
         "mobile": "(216) 288-2134",
@@ -9,25 +21,27 @@ var bio = {
         "linkedin": "http://www.linkedin.com/in/denzalereese",
         "location": "San Jose, CA"
     },
-    "welcomeMessage": "Transitioning from an inner city to an Ivy League institution taught me to adapt quickly, to outhustle circumstance, and to engineer opportunity where I lacked it. I had no exposure to computer science growing up, so I began teaching myself. I am currently enrolled in the Udacity Front-End Web Developer Nanodegree, and looking for the opportunity that practical experience can provide. Due to my background, I am also dedicated to increasing diversity in tech, and exploring the limitless potential technology has to revolutionize education.",
+    "welcomeMessage": "Transitioning from an inner city to an Ivy League institution taught me to adapt quickly," +
+        " to outhustle circumstance, and to engineer opportunity where I lacked it. I had no exposure to computer science growing up," +
+        " so I began teaching myself. I am currently enrolled in the Udacity Front-End Web Developer Nanodegree," +
+        " and looking for the opportunity that practical experience can provide. Due to my background," +
+        " I am also dedicated to increasing diversity in tech, and exploring the limitless potential technology has to" +
+        " revolutionize education.",
     "skills": ["HTML", "CSS", "Bootstrap", "Responsive Design", "JavaScript", "jQuery", "SQL", "Java", "Android Development",
         "Git/Github", "Object-Oriented Programming"
     ],
     "biopic": "images/biopic.jpg",
     "display": function() {
-        var formattedName;
-        var formattedRole;
-        var formattedMobile;
-        formattedName = HTMLheaderName.replace("%data%", 'Denzale "Wolf" Reese');
-        formattedRole = HTMLheaderRole.replace("%data%", "Front-End Student @ Udacity");
-        formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-        formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-        formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
-        formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-        formattedLinkedIn = HTMLlinkedIn.replace("%data%", bio.contacts.linkedin);
-        formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
-        formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
-        formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+        var formattedName = HTMLheaderName.replace("%data%", bio.name);
+        var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+        var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+        var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+        var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+        var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+        var formattedLinkedIn = HTMLlinkedIn.replace("%data%", bio.contacts.linkedin);
+        var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+        var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
+        var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
         $("#header").append(HTMLskillsStart);
         for (var i = 0; i < bio.skills.length; i++) {
             var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
@@ -43,8 +57,15 @@ var bio = {
         $("#topContacts").append(formattedTwitter);
         $("#topContacts").append(formattedGithub);
         $("#topContacts").append(formattedLinkedIn);
+        $("#footerContacts").append(formattedMobile);
+        $("#footerContacts").append(formattedEmail);
+        $("#footerContacts").append(formattedLocation);
+        $("#footerContacts").append(formattedTwitter);
+        $("#footerContacts").append(formattedGithub);
+        $("#footerContacts").append(formattedLinkedIn);
+
     }
-}
+};
 
 var work = {
     "jobs": [{
@@ -52,14 +73,25 @@ var work = {
         "title": "Americorps Member",
         "location": "San Jose, CA",
         "dates": "July 2015 - June 2016",
-        "description": "Served on the City Year SanDisk team at Horace Cureton Elementary school for 55 hours per week, exposing over 30 underprivileged 4th/5th graders to computer science. Assisted our corporate development office, as a member of the Ambassador Team, in maintaining donor relations, and participating in social media marketing initiatives. Featured in our promotional video for the Google Impact Challenge where our site won $500,000, and spoke at our quarterly Board of Directors meeting. Increased student engagement by collaborating with my teaching partner to create a reward system called the 'starChart' that was later adopted by 100% our team.",
+        "description": "Served on the City Year SanDisk team at Horace Cureton Elementary school for 55 hours per week," +
+            " exposing over 30 underprivileged 4th/5th graders to computer science. Assisted our corporate" +
+            " development office, as a member of the Ambassador Team, in maintaining donor relations," +
+            " and participating in social media marketing initiatives. Featured in our promotional video for the Google" +
+            " Impact Challenge where our site won $500,000, and spoke at our quarterly Board of Directors meeting." +
+            " Increased student engagement by collaborating with my teaching partner to create a reward system called the" +
+            " 'starChart' that was later adopted by 100% our team.",
         "link": "http://www.cityyear.org"
     }, {
         "employer": "Cornell University",
         "title": "Computer Lab Manager",
         "location": "Ithaca, NY",
         "dates": "November 2011 - May 2015",
-        "description": "Built a computer lab for students from the ground up, set up 12 PC/Mac desktop computers with Windows/Mac OS, and 3 multi-function printers. Maintained the upkeep of the computer lab by installing and repairing hardware/software, providing IT/technical support to over 150 students, and managing 3 new team members. Created an online catalog to organize over 300 library materials so that students could search for specific items, and find them much easier. Helped 100% of visiting Intro to Computer Programming students earn a final course grade of B- or better by assisting with their Java/Python homework, projects, and exam prep.",
+        "description": "Built a computer lab for students from the ground up, set up 12 PC/Mac desktop computers with" +
+            " Windows/Mac OS, and 3 multi-function printers. Maintained the upkeep of the computer lab by installing and" +
+            " repairing hardware/software, providing IT/technical support to over 150 students, and managing 3 new team members." +
+            " Created an online catalog to organize over 300 library materials so that students could search for specific items," +
+            " and find them much easier. Helped 100% of visiting Intro to Computer Programming students earn a final course grade" +
+            " of B- or better by assisting with their Java/Python homework, projects, and exam prep.",
         "link": "http://www.cornell.edu"
     }],
     "display": function() {
@@ -78,7 +110,7 @@ var work = {
             $(".work-entry:last").append(formattedWorkDescription);
         }
     }
-}
+};
 
 var projects = {
     "projects": [{
@@ -87,8 +119,7 @@ var projects = {
         "description": "A responsive site featuring my project portfolio",
         "images": ["images/Portfolio-site.JPG", "images/portfolio-site-mobile.jpg"],
         "link": "http://www.github.com/denzalereese/portfolio"
-    },
-    {
+    }, {
         "title": "Online Resume",
         "dates": "2016",
         "description": "An online resume built with JavaScript/jQuery",
@@ -113,7 +144,7 @@ var projects = {
             }
         }
     }
-}
+};
 
 var education = {
     "schools": [{
@@ -201,7 +232,7 @@ var education = {
             $(".course-entry:last").append(formattedOnlineURL);
         }
     }
-}
+};
 
 bio.display();
 work.display();
@@ -210,38 +241,38 @@ education.display();
 $("#mapDiv").append(googleMap);
 
 //adds pulse animation on mouseenter events
-$("#header").mouseenter(function(){
-  $("#header").removeClass("animated bounceInLeft").addClass("animated pulse")
-   .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-   function() {
-     $(this).removeClass("animated pulse");
-    });
+$("#header").mouseenter(function() {
+    $("#header").removeClass("animated bounceInLeft").addClass("animated pulse")
+        .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+            function() {
+                $(this).removeClass("animated pulse");
+            });
 });
-$("#workExperience").mouseenter(function(){
-  $("#workExperience").addClass("animated pulse")
-   .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-   function() {
-     $(this).removeClass("animated pulse");
-    });
+$("#workExperience").mouseenter(function() {
+    $("#workExperience").addClass("animated pulse")
+        .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+            function() {
+                $(this).removeClass("animated pulse");
+            });
 });
-$("#projects").mouseenter(function(){
-  $("#projects").addClass("animated pulse")
-   .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-   function() {
-     $(this).removeClass("animated pulse");
-    });
+$("#projects").mouseenter(function() {
+    $("#projects").addClass("animated pulse")
+        .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+            function() {
+                $(this).removeClass("animated pulse");
+            });
 });
-$("#education").mouseenter(function(){
-  $("#education").addClass("animated pulse")
-   .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-   function() {
-     $(this).removeClass("animated pulse");
-    });
+$("#education").mouseenter(function() {
+    $("#education").addClass("animated pulse")
+        .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+            function() {
+                $(this).removeClass("animated pulse");
+            });
 });
-$("#mapDiv").mouseenter(function(){
-  $("#mapDiv").addClass("animated pulse")
-   .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-   function() {
-     $(this).removeClass("animated pulse");
-    });
+$("#mapDiv").mouseenter(function() {
+    $("#mapDiv").addClass("animated pulse")
+        .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+            function() {
+                $(this).removeClass("animated pulse");
+            });
 });

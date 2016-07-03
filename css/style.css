@@ -129,7 +129,7 @@ hr {
 }
 
 .bluegray {
-  background-color: ##2d3c49;
+  background-color: #2d3c49;
 }
 
 .bluegray-text {
@@ -253,7 +253,7 @@ span {
 
 @media only screen and (max-width: 1024px) {
   #lets-connect {
-    margin-top: 5%;
+    margin: 0px;
   }
 }
 
@@ -269,7 +269,7 @@ span {
   }
 
   #lets-connect {
-    margin-top: 10%;
+    margin: 0px;
   }
 
   .biopic {

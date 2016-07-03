@@ -37,7 +37,7 @@ var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
 
 var HTMLonlineClasses = '<div id="online-classes" class="row"><h3>Online Classes</h3></div>';
-var HTMLonlineClassStart = '<div class="course-entry col-md-4"></div>'
+var HTMLonlineClassStart = '<div class="course-entry col-md-4"></div>';
 var HTMLonlineTitle = '%data%';
 var HTMLonlineSchool = ' - %data%';
 var HTMLonlineDates = '<span class="course-date">%data%</span>';
@@ -123,7 +123,7 @@ function initializeMap() {
         });
 
         google.maps.event.addListener(marker, 'click', function() {
-            // your code goes here!
+            infoWindow.open(map, marker);
         });
 
         // this is where the pin actually gets added to the map.
