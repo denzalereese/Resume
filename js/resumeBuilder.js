@@ -11,7 +11,7 @@
 
 var bio = {
     "name": 'Denzale "Wolf" Reese',
-    "role": "Front-End Student @ Udacity",
+    "role": "Full-Stack Developer",
     "age": 23,
     "contacts": {
         "mobile": "(216) 288-2134",
@@ -19,7 +19,7 @@ var bio = {
         "github": "http://www.github.com/denzalereese",
         "twitter": "http://www.twitter.com/denzalereese",
         "linkedin": "http://www.linkedin.com/in/denzalereese",
-        "location": "San Jose, CA"
+        "location": "San Francisco Bay Area, CA"
     },
     "welcomeMessage": "Transitioning from an inner city to an Ivy League institution taught me to adapt quickly," +
         " to outhustle circumstance, and to engineer opportunity where I lacked it. I had no exposure to computer science growing up," +
@@ -68,7 +68,16 @@ var bio = {
 };
 
 var work = {
-    "jobs": [{
+    "jobs": [
+    {
+          "employer": "Apple/Ideas United",
+          "title": "Counselor",
+          "location": "Cupertino, CA",
+          "dates": "July 2016 - August 2016",
+          "description": "",
+          "link": "http://www.apple.com"
+      },
+    {
         "employer": "City Year",
         "title": "Americorps Member",
         "location": "San Jose, CA",
