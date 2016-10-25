@@ -74,7 +74,7 @@ var work = {
           "title": "Counselor",
           "location": "Cupertino, CA",
           "dates": "July 2016 - August 2016",
-          "description": "",
+          "description": "Mentored participants involved in an early-stage summer initiative focused on engineering & technology education",
           "link": "http://www.apple.com"
       },
     {
