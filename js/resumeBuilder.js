@@ -27,8 +27,9 @@ var bio = {
         " and looking for the opportunity that practical experience can provide. Due to my background," +
         " I am also dedicated to increasing diversity in tech, and exploring the limitless potential technology has to" +
         " revolutionize education.",
-    "skills": ["HTML", "CSS", "Bootstrap", "Responsive Design", "JavaScript", "jQuery", "SQL", "Java", "Android Development",
-        "Git/Github", "Object-Oriented Programming"
+    "skills": [
+        "HTML", "CSS", "Bootstrap", "Materialize", "Responsive Design", "JavaScript", "Ruby", "jQuery", "SQL", "Java", "Android",
+        "Git/Github", "Object-Oriented Programming", "MEAN stack", "Rails", "Jasmine", "RSPec", "AFrame"
     ],
     "biopic": "images/biopic.jpg",
     "display": function() {
